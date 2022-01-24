@@ -65,10 +65,10 @@ def next_move(board):
     entred_cell = ""
     if current_player == "X":
         print(f"Player 1: ")
-        entred_cell = input("Enter cell: ")
+        entred_cell = input("Enter cell(a1 or b2 or c4...): ")
     else:
         print(f"Player 2: ")
-        entred_cell = input("Enter cell: ")
+        entred_cell = input("Enter cell(a1 or b2 or c4...): ")
 
     cell = [(ord(entred_cell[0].upper()) - 65),
             int(entred_cell[1:len(entred_cell)]) - 1]
